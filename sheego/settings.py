@@ -15,21 +15,21 @@ DOWNLOAD_HANDLERS = {
 
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 
-DOWNLOADER_MIDDLEWARES = {
-    "sheego.middlewares.RotateAgentMiddleware": 540,
-    "sheego.middlewares.ShowHeadersMiddleware": 545,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     "sheego.middlewares.RotateAgentMiddleware": 540,
+#     "sheego.middlewares.ShowHeadersMiddleware": 545,
+# }
 
-SPIDER_MIDDLEWARES = {
-   "sheego.middlewares.FilterKeywordMiddleware": 543,
-}
+# SPIDER_MIDDLEWARES = {
+#    "sheego.middlewares.FilterKeywordMiddleware": 543,
+# }
 
 
 # Enable Image Pipeline
 ITEM_PIPELINES = {"sheego.pipelines.SheegoImagePipeline": 100,
                   "sheego.pipelines.SheegoPricePipeline": 200,
-                  "sheego.pipelines.DuplicatesPipeline": 300,
-                  "sheego.pipelines.SavingToMySQLPipeline": 400,
+                #   "sheego.pipelines.DuplicatesPipeline": 300,
+                #   "sheego.pipelines.SavingToMySQLPipeline": 400,
                   }
 
 
